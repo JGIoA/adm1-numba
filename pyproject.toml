@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "adm1-numba"
+version = "0.1.0"
+description = "ADM1 anaerobic digestion model accelerated with Numba and numbalsoda."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Ji Gao" }
+]
+keywords = ["adm1", "anaerobic digestion", "numba", "lsoda", "simulation"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = [
+  "numba",
+  "numpy",
+  "numbalsoda",
+]
+
+[project.optional-dependencies]
+dev = [
+  "build",
+  "pytest",
+  "twine",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/adm1_numba"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[project.urls]
+"Homepage" = "https://github.com/JGIoA/adm1-numba"
