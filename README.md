@@ -8,7 +8,7 @@ simulation package using [`Numba`](https://github.com/numba/numba) and [`numbals
 ADM1 is a dynamic model for anaerobic digestion introduced by
 Batstone et al. in the original [IWA Scientific and Technical Report No. 13:
 *Anaerobic Digestion Model No. 1 (ADM1)*](https://doi.org/10.2166/9781780403052). It describes biochemical conversion,
-acid-base chemistry, inhibition, and gas-liquid transfer in anaerobic digesters. [`adm1-numba`](https://github.com/JGIoA/adm1-numba) implementation closely follows the work [Aspects on ADM1 Implementation within the BSM2 Framework](https://assets.pubpub.org/awqjabxp/51603224611145.pdf) by Rosen, C. and Jeppsson, U. 
+acid-base chemistry, inhibition, and gas-liquid transfer in anaerobic digesters. [`adm1-numba`](https://github.com/JGIoA/adm1-numba) implementation closely follows the work [Aspects on ADM1 Implementation within the BSM2 Framework](https://wwtmodels.pubpub.org/pub/y5vkldgi/release/1) by Rosen, C. and Jeppsson, U (Latest version in 2008). 
 
 
 
@@ -131,6 +131,33 @@ print(history[-1])
 ```
 
 ## Citation
+
+Reference:
+```bibtex
+@article{batstone2002anaerobic,
+title = "The IWA anaerobic digestion model No 1 (ADM1)",
+author = "D. Batstone and J. Keller and I. Angelidaki and S.V. Kalyuzhnyi and S.G. Pavlostathis and A. Rozzi and W.T.M. Sanders and H. Siegrist and V.A. Vavilin",
+year = "2002",
+language = "English",
+volume = "45",
+pages = "65--73",
+journal = "Water Science and Technology",
+issn = "0273-1223",
+publisher = "IWA Publishing",
+number = "10",
+}
+```
+
+```bibtex
+@article{rosen2021aspects,
+	author = {Rosen, Christian and Jeppsson, Ulf},
+	journal = {Wastewater Modelling},
+	year = {2021},
+	month = {jan 21},
+	note = {https://wwtmodels.pubpub.org/pub/y5vkldgi},
+	title = {Aspects on {ADM1} {Implementation} within the {BSM2} {Framework}},
+}
+```
 
 To cite this repository:
 
